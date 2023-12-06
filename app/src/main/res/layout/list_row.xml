@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ClassesActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img11"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:src="@drawable/presentation"></ImageView>
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/img11"
+            android:src="@drawable/ic_baseline_calendar_month_24"></ImageView>
+
+        <TextView
+            android:id="@+id/class_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img4"
+            android:text="Year"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/img4"
+            android:layout_marginTop="22dp"
+            android:layout_toRightOf="@id/img11"
+            android:src="@drawable/ic_baseline_device_hub_24"></ImageView>
+
+        <TextView
+            android:id="@+id/class_branch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/class_year"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img5"
+            android:layout_marginTop="20dp"
+            android:text="Branch"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/class_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toEndOf="@id/class_branch"
+            android:layout_marginTop="47dp"
+            android:text="Section"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

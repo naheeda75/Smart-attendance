@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".FacultyClassesActivity">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:onClick="goback"
+        ></ImageView>
+
+    <ListView
+        android:id="@+id/ListView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:divider="#8DB3E1"
+        android:dividerHeight="2dp" />
+
+    <ImageView
+        android:id="@+id/imageupload"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/add_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:onClick="upload"
+        />
+</RelativeLayout>
